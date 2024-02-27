@@ -20,4 +20,10 @@ footer {
 span {
   color: white;
 }
+
+@media (max-width: 480px) {
+  footer {
+    max-width: 100%;
+  }
+}
 </style>

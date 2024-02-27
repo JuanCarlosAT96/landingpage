@@ -22,7 +22,7 @@
       </div>
     </div>
     <div>
-      <img class="hero_img" src="../assets/heroimg.png" alt="" />
+      <img class="hero_img" src="../assets/pharmacy.jpg" alt="" />
     </div>
   </section>
 </template>
@@ -33,12 +33,16 @@ export default {};
 
 <style scoped>
 .hero {
-  height: 570px;
   display: flex;
   justify-content: space-evenly;
   background: var(--Secondary, #dee9ff);
+  padding: 90px 0px;
 }
-
+.hero_img {
+  height: 400px;
+  width: 380px;
+  margin-top: 20px;
+}
 .hero_title {
   display: inline-flex;
   flex-direction: column;
@@ -97,6 +101,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     height: 1000px;
+    text-align: center;
   }
 
   .hero_img {
@@ -108,8 +113,20 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-  .hero_title h1 {
-    text-align: center;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    max-width: 100%;
+  }
+  .hero_img {
+    height: 500px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
   }
 }
 </style>

@@ -346,11 +346,22 @@ main {
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media (max-width: 720px) {
   main {
     height: 1480px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    height: 1480px;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+
+  .card2 {
+    width: 100%;
   }
 }
 </style>

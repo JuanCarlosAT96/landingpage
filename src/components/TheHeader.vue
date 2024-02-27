@@ -40,8 +40,8 @@ export default {};
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 168px;
   background: #dee9ff;
+  padding-top: 60px;
 }
 
 .headerBtnContact {
@@ -74,6 +74,27 @@ export default {};
 @media (max-width: 720px) {
   .header {
     flex-direction: column;
+  }
+
+  .header_nav {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+  }
+
+  .header img {
+    margin-top: 10px;
   }
 }
 </style>
